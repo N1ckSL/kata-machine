@@ -2,7 +2,7 @@ export default function two_crystal_balls(breaks: boolean[]): number {
     let jmpAmount = Math.floor(Math.sqrt(breaks.length));
     let i = jmpAmount;
 
-    // here we find where the first ball breaks and we jumo sqrt of breaks.length each step
+    // here we find where the first ball breaks and we jump sqrt of breaks.length each step
     for (; i < breaks.length; i += jmpAmount) {
         if (breaks[i]) {
             break;
